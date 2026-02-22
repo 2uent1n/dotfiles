@@ -4,11 +4,13 @@ quit-after-last-window-closed = true
 confirm-close-surface = false
 background-opacity = 1
 background-blur = true
-macos-titlebar-proxy-icon = hidden
 cursor-click-to-move = true
 auto-update = "off"
+{{- if eq .chezmoi.os "darwin" }}
+macos-titlebar-proxy-icon = hidden
 macos-custom-icon = ~/.config/ghostty/Ghostty.png
 macos-icon = custom
+{{- end }}
 
 # Custom keybinds
 keybind = super+ù=goto_split:previous
@@ -21,11 +23,11 @@ keybind = super+shift+$=next_tab
 keybind = super+shift+left_bracket=unbind
 keybind = super+shift+right_bracket=unbind
 
-keybind = global:super+grave_accent=toggle_quick_terminal
-
 keybind = shift+enter=text:\x1b\r
 
+{{ if eq .chezmoi.os "darwin" -}}
 ## Be able to use option left as Alt
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+{{ end -}}

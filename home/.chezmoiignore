@@ -1,4 +1,6 @@
 {{- if ne .chezmoi.os "darwin" }}
 .Brewfile
 .hushlogin
+.zprofile
+.config/ghostty/Ghostty.png
 {{- end }}

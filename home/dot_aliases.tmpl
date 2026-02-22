@@ -1,0 +1,67 @@
+## Chezmoi
+### General
+alias cm="chezmoi"
+alias cmcd="chezmoi cd"
+alias cma="chezmoi add"
+alias cmra="chezmoi re-add"
+alias cmd="chezmoi diff"
+alias cmap="chezmoi apply"
+alias cmu="chezmoi update"
+alias cme="chezmoi edit"
+alias cmea="chezmoi edit --apply"
+alias cmew="chezmoi edit --watch"
+alias cmad="chezmoi apply --dry-run --verbose"
+### Git
+alias cmg="chezmoi git --"
+alias cmgst="chezmoi git -- status"
+alias cmgd="chezmoi git -- diff"
+alias cmgds="chezmoi git -- diff --staged"
+alias cmga="chezmoi git -- add"
+alias cmgaa="chezmoi git -- add --all"
+alias cmgcmsg="chezmoi git -- commit --message"
+alias cmgp="chezmoi git -- push"
+alias cmgl="chezmoi git -- pull"
+alias cmglo="chezmoi git -- log --oneline --decorate"
+alias cmglg="chezmoi git -- log --stat"
+
+## pnpm
+alias pn="pnpm"
+alias pni="pnpm install"
+alias pna="pnpm add"
+alias pnaD="pnpm add -D"
+alias pnrm="pnpm remove"
+alias pnu="pnpm update"
+alias pnur="pnpm update -r"
+alias pnx="pnpm dlx"
+alias pne="pnpm exec"
+alias pnf="pnpm --filter"
+
+## EZA
+# Base options (color, icons, directories first)
+export EZA_BASE="--color=always --group-directories-first --icons=always"
+# Displays directory content with icons and color (standard 'ls' replacement)
+alias ls="eza ${EZA_BASE}"
+# Long detailed list of ALL files (including hidden), with octal permissions
+alias ll="eza -la --octal-permissions ${EZA_BASE}"
+# Short list, binary format, displaying ONLY directories + Git status
+alias l="eza -bGF --header --git ${EZA_BASE}"
+# Long list of directories (non-recursive), sorted by last modified date + Git status
+alias llm="eza -lbGd --header --git --sort=modified ${EZA_BASE}"
+# Long list of ALL files
+alias la="eza --long --all ${EZA_BASE}"
+alias lag="eza --long --all --group ${EZA_BASE}"
+# Simple list, one file per line (useful for piping)
+alias lS="eza -1 ${EZA_BASE}"
+# Displays a directory tree, limited to two or three levels deep
+alias lt2="eza --tree ${EZA_BASE} --level=2"
+alias lt3="eza --tree ${EZA_BASE} --level=3"
+# Displays ONLY hidden files/directories (those starting with '.')
+alias l.="eza -a | grep -E '^\.'"
+unset EZA_BASE
+
+{{ if eq .chezmoi.os "darwin" -}}
+## macOS-specific
+alias glm="claude --settings $HOME/.claude/settings-glm.json"
+alias mrkd="open -a MarkEdit"
+{{ end -}}
+

@@ -12,39 +12,11 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export EDITOR='nano'
+export EDITOR='nvim'
 
 # Aliases
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-## EZA aliases start
-# Base options (color, icons, directories first)
-export EZA_BASE="--color=always --group-directories-first --icons=always"
-# Displays directory content with icons and color. (Standard 'ls' replacement)
-alias ls="eza ${EZA_BASE}"
-# Long detailed list of ALL files (including hidden), with octal permissions.
-alias ll="eza -la --octal-permissions ${EZA_BASE}"
-# Short list, binary format, displaying ONLY directories + Git status.
-alias l="eza -bGF --header --git ${EZA_BASE}"
-# Long list of directories (non-recursive), sorted by last modified date + Git status.
-alias llm="eza -lbGd --header --git --sort=modified ${EZA_BASE}"
-# Long list of ALL files.
-alias la="eza --long --all ${EZA_BASE}"
-alias lag="eza --long --all --group ${EZA_BASE}"
-# Simple list, one file per line (useful for piping).
-alias lS="eza -1 ${EZA_BASE}"
-# Displays a directory tree, limited to two or three levels deep.
-alias lt2="eza --tree ${EZA_BASE} --level=2"
-alias lt3="eza --tree ${EZA_BASE} --level=3"
-# Displays ONLY hidden files/directories (those starting with '.').
-alias l.="eza -a | grep -E '^\.'"
-unset EZA_BASE
-## EZA aliases end
+source ~/.aliases
 
-{{ if eq .chezmoi.os "darwin" -}}
-alias glm="claude --settings $HOME/.claude/settings-glm.json"
-alias mrkd="open -a MarkEdit"
-
-{{ end -}}
 # Powerlevel10k configuration
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

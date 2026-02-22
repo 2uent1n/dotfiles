@@ -40,9 +40,11 @@ alias l.="eza -a | grep -E '^\.'"
 unset EZA_BASE
 ## EZA aliases end
 
+{{ if eq .chezmoi.os "darwin" -}}
 alias glm="claude --settings $HOME/.claude/settings-glm.json"
 alias mrkd="open -a MarkEdit"
 
+{{ end -}}
 # Powerlevel10k configuration
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -51,6 +53,7 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 
 . "$HOME/.local/bin/env"
 
+{{ if eq .chezmoi.os "darwin" -}}
 # pnpm
 export PNPM_HOME="/Users/quentin/Library/pnpm"
 case ":$PATH:" in
@@ -59,8 +62,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+{{ end -}}
 # zoxide
 eval "$(zoxide init zsh)"
 
+{{ if eq .chezmoi.os "darwin" -}}
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
+{{ end }}

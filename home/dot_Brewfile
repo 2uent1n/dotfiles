@@ -1,0 +1,135 @@
+tap "oven-sh/bun"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# CLI tool for analyzing Claude Code usage from local JSONL files
+brew "ccusage"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
+# Top-like interface for container metrics
+brew "ctop"
+# Modern diagram scripting language that turns text to diagrams
+brew "d2"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Automatic git commit --fixup
+brew "git-absorb"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Audit git repos for secrets
+brew "gitleaks"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Improved top (interactive process viewer)
+brew "htop"
+# Postgres C API library
+brew "libpq"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# AI coding agent, built for the terminal
+brew "opencode"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# Official tldr client written in Rust
+brew "tlrc"
+# Program that allows you to count code, quickly
+brew "tokei"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Low level tooling for WebAssembly in Rust
+brew "wasm-tools"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
+# Application uninstaller
+cask "appcleaner"
+# Display management tool
+cask "betterdisplay"
+# Desktop password and login vault
+cask "bitwarden"
+# Send any size file between devices
+cask "blip"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Tool to show live information about the batteries in various devices
+cask "coconutbattery"
+# Collaborative team software
+cask "figma"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Desktop client for GitHub repositories
+cask "github"
+# Web browser
+cask "google-chrome"
+# Free and open-source media player
+cask "iina"
+# Java IDE by JetBrains
+cask "intellij-idea"
+# App to manage software development and track bugs
+cask "linear-linear"
+# Markdown editor
+cask "markedit"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
+# Music app blocker utility
+cask "music-decoy"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Calendar for professionals and teams
+cask "notion-calendar"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Collaboration platform for API development
+cask "postman"
+# VPN client focusing on security
+cask "protonvpn"
+# IDE for professional Python development
+cask "pycharm"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Modified browser that helps in responsive web development
+cask "responsively"
+# Rust IDE
+cask "rustrover"
+# Screenshot measurement and annotation tool
+cask "shottr"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Menu bar manager
+cask "thaw"
+# Unpacks archive files
+cask "the-unarchiver"
+# To-do list
+cask "todoist-app"
+# Open-source BitTorrent client
+cask "transmission"
+# Open-source code editor
+cask "visual-studio-code"
+# Native desktop client for WhatsApp
+cask "whatsapp"
+# Network protocol analyzer
+cask "wireshark-app"
+# Gecko based web browser
+cask "zen"
+# Video communication and virtual meeting platform
+cask "zoom"

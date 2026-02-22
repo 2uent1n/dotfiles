@@ -49,6 +49,8 @@ brew "tlrc"
 brew "tokei"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Low level tooling for WebAssembly in Rust
 brew "wasm-tools"
 # Shell extension to navigate your filesystem faster

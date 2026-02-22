@@ -42,4 +42,12 @@ else
   echo "Powerlevel10k is already installed, skipping."
 fi
 
+# Install Rustup if not already installed
+if ! command -v rustup &>/dev/null; then
+  echo "Installing Rustup..."
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+else
+  echo "Rustup is already installed, skipping."
+fi
+
 echo "Done!"

@@ -10,17 +10,24 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Install chezmoi and apply the dotfiles:
+2. Install and init chezmoi:
 
 ```sh
 brew install chezmoi
-chezmoi init --apply 2uent1n
+chezmoi init 2uent1n
 ```
 
 3. Run the setup script to install packages and plugins:
 
 ```sh
 ~/.local/share/chezmoi/scripts/setup-macos.sh
+```
+
+4. Check the dotfiles diff and apply
+
+```sh
+chezmoi diff
+chezmoi apply
 ```
 
 ## Adding a new file

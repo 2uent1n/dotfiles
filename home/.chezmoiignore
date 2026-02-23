@@ -3,4 +3,5 @@
 .hushlogin
 .zprofile
 .config/ghostty/Ghostty.png
+.cargo/env
 {{- end }}

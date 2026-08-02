@@ -1,8 +1,7 @@
-tap "oven-sh/bun"
+# Browser automation CLI for AI agents
+brew "agent-browser"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# CLI tool for analyzing Claude Code usage from local JSONL files
-brew "ccusage"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Top-like interface for container metrics
@@ -29,8 +28,12 @@ brew "git-delta"
 brew "gitleaks"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Postgres C API library
 brew "libpq"
 # Mac App Store command-line interface
@@ -53,22 +56,20 @@ brew "tokei"
 brew "tree"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
-# Low level tooling for WebAssembly in Rust
-brew "wasm-tools"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
 # Application uninstaller
 cask "appcleaner"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Display management tool
 cask "betterdisplay"
 # Desktop password and login vault
 cask "bitwarden"
 # Send any size file between devices
 cask "blip"
-# Terminal-based AI coding assistant
-cask "claude-code"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Collaborative team software
@@ -81,10 +82,10 @@ cask "github"
 cask "google-chrome"
 # Free and open-source media player
 cask "iina"
-# Java IDE by JetBrains
-cask "intellij-idea"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # App to manage software development and track bugs
-cask "linear-linear"
+cask "linear"
 # Markdown editor
 cask "markedit"
 # Tool to control external monitor brightness & volume
@@ -103,20 +104,16 @@ cask "orbstack"
 cask "postman"
 # VPN client focusing on security
 cask "protonvpn"
-# IDE for professional Python development
-cask "pycharm"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Modified browser that helps in responsive web development
 cask "responsively"
-# Rust IDE
-cask "rustrover"
+# Open source virtual/remote desktop application
+cask "rustdesk"
 # Screenshot measurement and annotation tool
 cask "shottr"
-# Team communication and collaboration software
-cask "slack"
 # Music streaming service
 cask "spotify"
 # Messaging app with a focus on speed and security
@@ -133,13 +130,12 @@ cask "transmission"
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
 cask "whatsapp"
-# Network protocol analyzer
-cask "wireshark-app"
+# Multiplayer code editor
+cask "zed"
 # Gecko based web browser
 cask "zen"
-# Video communication and virtual meeting platform
-cask "zoom"
 mas "Dropover", id: 1355679052
+mas "GarageBand", id: 682658836
 mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825

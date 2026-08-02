@@ -61,7 +61,6 @@ unset EZA_BASE
 
 {{ if eq .chezmoi.os "darwin" -}}
 ## macOS-specific
-alias glm="claude --settings $HOME/.claude/settings-glm.json"
 alias mrkd="open -a MarkEdit"
-{{ end -}}
-
+alias upgrade="brew update && brew upgrade -y && mas upgrade"
+{{ end }}

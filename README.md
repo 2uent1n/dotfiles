@@ -63,8 +63,7 @@ chezmoi cd                        # open shell in source directory
 ## Updating the Brewfile
 
 ```sh
-# --describe adds comments with package descriptions
 # --no-cargo excludes Rust crates installed via cargo
-brew bundle dump --global --force --describe --no-cargo
+brew bundle dump --global --force --no-cargo
 chezmoi re-add
 ```

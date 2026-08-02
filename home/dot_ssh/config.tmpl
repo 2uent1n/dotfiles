@@ -10,3 +10,9 @@ Host github.com
   UseKeychain yes
 {{- end }}
   IdentityFile ~/.ssh/id_ed25519
+
+{{ if eq .chezmoi.os "darwin" -}}
+Host gravastar
+  HostName gravastar
+  User quentin
+{{ end }}

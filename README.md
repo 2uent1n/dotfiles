@@ -77,6 +77,6 @@ chezmoi cd                        # open shell in source directory
 
 ```sh
 # --no-cargo excludes Rust crates installed via cargo
-brew bundle dump --global --force --no-cargo
+brew bundle dump --global --force --no-cargo --no-go
 chezmoi re-add
 ```

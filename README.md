@@ -4,7 +4,7 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 
 ## Getting started
 
-1. Install [Homebrew](https://brew.sh):
+1. (macOS-only) Install [Homebrew](https://brew.sh):
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -13,14 +13,27 @@ Personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 2. Install and init chezmoi:
 
 ```sh
+# macOS
 brew install chezmoi
+
+# Debian (double-check official docs)
+sh -c "$(curl -fsLS https://get.chezmoi.io)" -- -b $HOME/.local/bin
+
+# Init chezmoi by cloning the dotfiles repository
 chezmoi init 2uent1n
 ```
 
-3. Run the setup script to install packages and plugins:
+3. Run the setup script(s) to install packages and plugins:
 
 ```sh
+# macOS
 ~/.local/share/chezmoi/scripts/setup-macos.sh
+
+# Debian (WIP)
+~/.local/share/chezmoi/scripts/debian/setup-zsh.sh
+~/.local/share/chezmoi/scripts/debian/setup-main.sh
+# At this point the PATH is not properly configured yet, so we temporarily add the local bin to the PATH
+PATH="$HOME/.local/bin:$PATH"
 ```
 
 4. Check the dotfiles diff and apply

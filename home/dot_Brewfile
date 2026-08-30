@@ -156,6 +156,8 @@ cask "transmission"
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
 cask "whatsapp"
+# Multiplayer code editor
+cask "zed"
 # Gecko based web browser
 cask "zen"
 mas "Dropover", id: 1355679052

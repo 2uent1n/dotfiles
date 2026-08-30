@@ -1,0 +1,347 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "proxy": "",
+  "git": {
+    "show_stage_restore_buttons": true,
+    "path_style": "file_name_first",
+    "blame": {
+      "show_avatar": true
+    },
+    "inline_blame": {
+      "show_commit_summary": true,
+      "enabled": true
+    }
+  },
+  "terminal": {
+    "font_size": 17.0,
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "cursor_shape": "bar",
+    "font_family": "MesloLGS NF",
+    "show_count_badge": false,
+    "starts_open": false
+  },
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": true
+  },
+  "tabs": {
+    "show_close_button": "hover",
+    "file_icons": true,
+    "git_status": true
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": true,
+    "show": true
+  },
+  "title_bar": {
+    "show_user_picture": false,
+    "show_user_menu": true,
+    "show_sign_in": false,
+    "show_branch_status_icon": true
+  },
+  "status_bar": {
+    "show_active_file": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "semantic_tokens": "combined",
+  "document_symbols": "off",
+  "colorize_brackets": true,
+  "middle_click_paste": false,
+  "code_lens": "off",
+  "inlay_hints": {
+    "show_background": false,
+    "show_type_hints": true,
+    "show_value_hints": true,
+    "enabled": true
+  },
+  "completion_menu_item_kind": "symbol",
+  "show_whitespaces": "selection",
+  "line_ending": "prefer_lf",
+  "format_on_save": "on",
+  "indent_guides": {
+    "line_width": 1,
+    "active_line_width": 1,
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "show_wrap_guides": false,
+  "tab_size": 4,
+  "toolbar": {
+    "agent_review": false,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    },
+    "diagnostics": "all",
+    "cursors": true,
+    "show": "auto"
+  },
+  "inline_code_actions": false,
+  "relative_line_numbers": "disabled",
+  "gutter": {
+    "min_line_number_digits": 3,
+    "runnables": false,
+    "bookmarks": false,
+    "breakpoints": false,
+    "line_numbers": true
+  },
+  "auto_signature_help": false,
+  "sticky_scroll": {
+    "enabled": true
+  },
+  "which_key": {
+    "delay_ms": 600,
+    "enabled": true
+  },
+  "rounded_selection": true,
+  "current_line_highlight": "all",
+  "ui_font_family": ".ZedSans",
+  "default_open_behavior": "new_window",
+  "cli_default_open_behavior": "new_window",
+  "when_closing_with_no_tabs": "keep_window_open",
+  "on_last_window_closed": "quit_app",
+  "disable_ai": true,
+  "text_rendering_mode": "platform_default",
+  "markdown_preview_code_font_family": ".ZedMono",
+  "markdown_preview_font_family": ".ZedMono",
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400.0,
+  "project_panel": {
+    "sort_order": "default",
+    "hide_hidden": false,
+    "hide_root": true,
+    "git_status_indicator": true,
+    "diagnostic_badges": false,
+    "bold_folder_labels": true,
+    "entry_spacing": "comfortable",
+    "default_width": 280.0,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "button": true,
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "agent": {
+    "button": false,
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "commit_title_max_length": 0,
+    "show_count_badge": false,
+    "entry_primary_click_action": "file_diff",
+    "diff_stats": true,
+    "file_icons": true,
+    "tree_view": true,
+    "collapse_untracked_diff": false,
+    "group_by": "staging",
+    "status_style": "icon",
+    "default_width": 360.0,
+    "dock": "left"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": false,
+  "base_keymap": "VSCode",
+  "ui_font_size": 20.0,
+  "buffer_font_size": 18.0,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
+  "lsp": {
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--output.json.path",
+          "stdout",
+          "--show-stats=false",
+          "--output.text.path="
+        ]
+      }
+    },
+    "oxlint": {
+      "initialization_options": {
+        "settings": {
+          "configPath": null,
+          "run": "onType",
+          "disableNestedConfig": false,
+          "fixKind": "safe_fix",
+          "unusedDisableDirectives": "deny"
+        }
+      }
+    },
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "fmt.configPath": null,
+          "run": "onSave"
+        }
+      }
+    }
+  },
+  "languages": {
+    "Go": {
+      "language_servers": ["gopls", "golangci-lint"]
+    },
+    "CSS": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "HTML": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JavaScript": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        },
+        {
+          "code_action": "source.fixAll.oxc"
+        }
+      ]
+    },
+    "JSON": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JSONC": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "Markdown": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "MDX": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "TypeScript": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "TSX": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "YAML": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    }
+  }
+}

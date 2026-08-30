@@ -1,0 +1,8 @@
+modelRoles:
+  default: opencode-go/glm-5.3-flash
+symbolPreset: nerd
+composer:
+  shape: pi
+theme:
+  dark: dark-catppuccin
+setupVersion: 2

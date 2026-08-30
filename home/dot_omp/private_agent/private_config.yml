@@ -5,4 +5,103 @@ composer:
   shape: pi
 theme:
   dark: dark-catppuccin
+  light: light-catppuccin
 setupVersion: 2
+statusLine:
+  preset: default
+  sessionAccent: true
+  transparent: false
+display:
+  shimmer: classic
+  showTokenUsage: true
+  cacheMissMarker: true
+  collapseCompacted: false
+tui:
+  imeSafeCursor: false
+task:
+  showResolvedModelBadge: true
+  eager: preferred
+  enableEffort: true
+  maxConcurrency: 2
+  enableLsp: false
+  maxRecursionDepth: 1
+  softRequestBudget: 150
+  maxEffort: medium
+  isolation:
+    mode: none
+    commits: ai
+defaultThinkingLevel: high
+hideThinkingBlock: false
+proseOnlyThinking: false
+modelRoleStorage: global
+personality: pragmatic
+advisor:
+  enabled: true
+prewalk:
+  enabled: true
+steeringMode: all
+followUpMode: all
+interruptMode: wait
+loop:
+  mode: prompt
+doubleEscapeAction: tree
+spelling:
+  typoDetection: false
+tools:
+  approvalMode: always-ask
+completion:
+  notify: "off"
+error:
+  notify: "on"
+recap:
+  enabled: false
+stt:
+  enabled: true
+magicKeywords:
+  enabled: false
+  ultrathink: false
+  orchestrate: false
+  workflow: false
+startup:
+  showSplash: false
+  checkUpdate: false
+  changelogMode: summary
+power:
+  sleepPrevention: idle
+features:
+  unexpectedStopDetection: mechanical
+compaction:
+  enabled: false
+  midTurnEnabled: false
+  handoffSaveToDisk: true
+  asyncEnabled: false
+memory:
+  backend: "off"
+autolearn:
+  enabled: true
+  autoContinue: false
+lsp:
+  diagnosticsOnEdit: true
+bash:
+  enabled: true
+bashInterceptor:
+  enabled: true
+astGrep:
+  enabled: true
+github:
+  enabled: true
+  cache:
+    enabled: true
+todo:
+  eager: preferred
+commands:
+  enableClaudeUser: false
+  enableClaudeProject: false
+  enableOpencodeUser: false
+  enableOpencodeProject: false
+providers:
+  tts: local
+  tinyModel: qwen3-0.6b
+  tinyModelDevice: auto
+secrets:
+  enabled: true

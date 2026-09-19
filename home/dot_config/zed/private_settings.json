@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "markdown_preview": {
+    "font_family": ".ZedMono",
+    "code_font_family": ".ZedMono"
+  },
   "proxy": "",
   "git": {
     "show_stage_restore_buttons": true,
@@ -123,8 +127,6 @@
   "on_last_window_closed": "quit_app",
   "disable_ai": true,
   "text_rendering_mode": "platform_default",
-  "markdown_preview_code_font_family": ".ZedMono",
-  "markdown_preview_font_family": ".ZedMono",
   "buffer_line_height": "comfortable",
   "buffer_font_weight": 400.0,
   "project_panel": {
@@ -199,7 +201,6 @@
     "oxlint": {
       "initialization_options": {
         "settings": {
-          "configPath": null,
           "run": "onType",
           "disableNestedConfig": false,
           "fixKind": "safe_fix",
@@ -332,6 +333,7 @@
       ]
     },
     "YAML": {
+      "format_on_save": "on",
       "prettier": {
         "allowed": false
       },

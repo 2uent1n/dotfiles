@@ -1,0 +1,16 @@
+{
+  "lastChangelogVersion": "0.85.1",
+  "theme": "dark",
+  "compaction": {
+    "enabled": false
+  },
+  "editorPaddingX": 1,
+  "outputPad": 1,
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "tuiMode": "regular",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "deepseek-v4.1-flash",
+  "hideThinkingBlock": true
+}

@@ -12,5 +12,8 @@
   "tuiMode": "regular",
   "defaultProvider": "opencode-go",
   "defaultModel": "deepseek-v4.1-flash",
-  "hideThinkingBlock": true
+  "hideThinkingBlock": true,
+  "packages": [
+    "npm:pi-ask-user"
+  ]
 }

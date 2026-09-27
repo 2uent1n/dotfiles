@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.85.1",
+  "lastChangelogVersion": "0.87.1",
   "theme": "dark",
   "compaction": {
     "enabled": false
@@ -10,10 +10,27 @@
     "showTerminalProgress": true
   },
   "tuiMode": "regular",
-  "defaultProvider": "opencode-go",
+  "defaultProvider": "hyper",
   "defaultModel": "deepseek-v4.1-flash",
   "hideThinkingBlock": true,
+  "powerline": {
+    "preset": "default",
+    "welcome": false,
+    "separator": "pipe",
+    "placement": "below"
+  },
+  "showLastPrompt": false,
+  "subagents": {
+    "disableBuiltins": true
+  },
   "packages": [
-    "npm:pi-ask-user"
+    "git:github.com/charmbracelet/pi-hyper-provider",
+    "npm:@juicesharp/rpiv-btw",
+    "npm:@juicesharp/rpiv-web-tools",
+    "npm:pi-subagents",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@plannotator/pi-extension",
+    "npm:pi-powerline-footer",
+    "npm:@gotgenes/pi-permission-system"
   ]
 }

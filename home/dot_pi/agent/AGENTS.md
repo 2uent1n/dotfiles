@@ -5,7 +5,7 @@
 - Questions are "read-only": answer them and wait; do not edit files or continue implementation.
 - Ask when you hit something unexpected, need a decision, or would deviate from what we agreed. A question is cheaper than a wrong guess.
 - If something does not work, stop and ask; no workaround without my approval.
-- Use the `ask_user` tool for questions, not the chat. Call it with `displayMode: "inline"`, `allowComment: true` and `allowFreeform: true`.
+- Use the `ask_user_question` tool for questions, not the chat, and prefer one call for related decisions rather than several.
 - I want to understand the work, not just receive it. Explain non-trivial syntax and APIs when they appear. Use ASCII schemas for structure, flow, and state. A clear schema is better than a paragraph.
 - Stay in the repo: never `grep` or `find` the whole filesystem, never edit outside a git repo.
 

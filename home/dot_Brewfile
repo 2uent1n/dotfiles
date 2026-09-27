@@ -1,18 +1,17 @@
 tap "ariga/tap"
 tap "bufbuild/buf"
-tap "can1357/tap"
 # Browser automation CLI for AI agents
 brew "agent-browser"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # CLI of the open-source IDE For exploring and testing APIs
 brew "bruno-cli"
+# CLI tool for analyzing Claude Code usage from local JSONL files
+brew "ccusage"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Top-like interface for container metrics
 brew "ctop"
-# Modern diagram scripting language that turns text to diagrams
-brew "d2"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Git diff pager based on delta but with a file tree
@@ -109,24 +108,20 @@ cask "coconutbattery"
 cask "figma"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Desktop client for GitHub repositories
-cask "github"
 # Web browser
 cask "google-chrome"
 # Free and open-source media player
 cask "iina"
-# JetBrains tools manager
-cask "jetbrains-toolbox"
 # App to manage software development and track bugs
 cask "linear"
+# Full TeX Live distribution with GUI applications
+cask "mactex"
 # Markdown editor
 cask "markedit"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Music app blocker utility
 cask "music-decoy"
-# App to write, plan, collaborate, and get organised
-cask "notion"
 # Calendar for professionals and teams
 cask "notion-calendar"
 # Cloud gaming platform
@@ -153,8 +148,6 @@ cask "shottr"
 cask "spotify"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Menu bar manager
-cask "thaw"
 # Unpacks archive files
 cask "the-unarchiver"
 # To-do list
